@@ -1,5 +1,3 @@
-Drop table Student;
-
 --Creating a table called student
 CREATE TABLE Student(
 Student_id int NOT NULL, 
@@ -37,6 +35,7 @@ UPDATE Student
 SET First_name = 'Precious'
 WHERE Student_id = 3 
 COMMIT TRANSACTION
+
 --Using ROWLOCK
 SELECT * 
 FROM Student WITH (ROWLOCK) 
